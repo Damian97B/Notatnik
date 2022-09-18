@@ -6,5 +6,6 @@ namespace App\Exception;
 
 require_once("AppException.php");
 
-class ConfigurationException extends AppException{
+class ConfigurationException extends AppException
+{
 }
