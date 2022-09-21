@@ -9,9 +9,10 @@
       </li>
       <li>Zapisano: <?php echo $note['created'] ?></li>
     </ul>
-  <a href="/?action=edit&id=<?php echo $note['id']?>">
-    <button>Edytuj</button>
-  </a>
+    <form method="POST" action="/?action=delete">
+        <input name="id" type="hidden" value="<?php echo $note['id']?>"/>
+        <input type="submit" value="Usuń"/>
+    </form>
   <?php else : ?>
     <div>Brak notatki do wyświetlenia</div>
   <?php endif; ?>
