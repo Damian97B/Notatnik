@@ -33,7 +33,7 @@
       ?>
     </div>
     <?php
-    dump($params['page']);
+    // dump($params['page']);
     $sort =  $params['sort'] ?? [];
     $by = $sort['by'] ?? 'title';
     $order = $sort['order'] ?? 'desc';

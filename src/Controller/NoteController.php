@@ -50,7 +50,7 @@ class NoteController extends AbstractController
     $note = $this->database->getNotes($pageNumber, $pageSize, $sortBy, $sortOrder);
 
     $notes = $this->database->getCount();
-    dump($notes);
+    // dump($notes);
     $this->view->render(
       'list',
       [
@@ -78,7 +78,7 @@ class NoteController extends AbstractController
 
 
 
-      dump($noteId);
+      // dump($noteId);
 
       exit('jestesmy w post');
     }
@@ -105,7 +105,7 @@ class NoteController extends AbstractController
       ['note' => $this->getNote()]
     );
 
-    dump($note);
+    // dump($note);
   }
 
   private function getNote(): array{
